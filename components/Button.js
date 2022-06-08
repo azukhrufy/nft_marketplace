@@ -31,11 +31,13 @@ export const CircleButton = ({imgUrl, handlePress, ...props}) => {
     )
 }
 
-export const RectButton = () => {
+export const RectButton = ({...props}) => {
     return (
-        <View>
-            <Text>Rect</Text>
-        </View>
+        <TouchableOpacity style={{
+            ...props
+        }}>
+            <Text>Button Navigate</Text>
+        </TouchableOpacity>
     )
 }
 
